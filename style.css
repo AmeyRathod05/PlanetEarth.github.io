@@ -1,0 +1,102 @@
+/* font import */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@800&family=Roboto:wght@300;500;700&family=Rubik:wght@300&display=swap');
+
+/* resetting browser default margin & padding  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    margin: 0;
+    font-size:20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+/* images */
+.img-1{
+    background-image: url(planetearth.jpg);
+    min-height: 100vh;
+}
+.img-2{
+    background-image: url(jungle.jpg);
+    min-height: 100vh;
+}
+.img-3{
+    background-image: url(iceworlds.jpg);
+    min-height: 100vh;
+}
+.img-4{
+    background-image: url(ocean1.jpg);
+    min-height: 100vh;
+}
+.img-5{
+    background-image: url(desert.jpg);
+    min-height: 100vh;
+}
+.img-1,.img-2,.img-3, .img-4,.img-5{
+
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+/* text */
+.text{
+
+    position: absolute;
+    font-weight: 700;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.text-bg{
+    
+    color: rgb(255, 255, 255);
+
+    padding: 20px;
+}
+/* sections */
+.section{
+    padding: 50px 80px;
+    text-align: center;
+}
+.section h2{
+    text-decoration: underline;
+    padding-bottom: 30px;
+}
+.section-light{
+    background-color: #eeeeee;
+    color: rgb(92, 91, 91);
+}
+.section-dark{
+    background-color: rgb(92, 91, 91);
+    color: #eeeeee;
+}
+/* footer */
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+/* responsive css */
+@media only screen and (max-width: 750px){
+    .text {
+        line-height: 80px;
+        font-size: 45px;
+    }
+    .img-1,.img-2,.img-3, .img-4,.img-5{
+        min-height: 50vh;
+  }
+  
+}
